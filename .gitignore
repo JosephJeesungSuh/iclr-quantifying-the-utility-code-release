@@ -1,0 +1,135 @@
+.claude/
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# uv / poetry / pip lockfiles people sometimes commit by accident
+uv.lock
+poetry.lock
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Tests / coverage / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment / secrets — must never ship
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+credentials.json
+
+# Logs
+*.log
+logs/
+
+# ML / experiment artifacts (released separately on HuggingFace per README)
+wandb/
+mlruns/
+runs/
+checkpoints/
+ckpts/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.distcp
+*.onnx
+
+# Data — code-only release; data shipped separately
+data/
+datasets/
+cache/
+hf_cache/
+.cache/
+*.parquet
+*.arrow
+*.feather
+*.h5
+*.hdf5
+
+# Generated outputs / evaluation results
+outputs/
+results/
+generations/
+predictions/
+*.jsonl
+!**/few_shot/*.jsonl
+!**/examples/*.jsonl
+
+
+# SLURM / cluster artifacts
+slurm-*.out
+*.slurm.log
+core.*
+
+# Review artifacts and generated training inputs
+*.pdf
+*.ipynb
+*.zip
+*.tar*
+processed_data/
+data_with_intents/
+training_data/
+userlm_checkpoints/
+profiler_results/
+.gemini/
+
+# These are source packages, not generated data.
+!sftuser_training/llama-cookbook/src/llama_cookbook/data/
+!sftuser_training/llama-cookbook/src/llama_cookbook/data/**
+!sftuser_training/llama-cookbook/src/llama_cookbook/datasets/
+!sftuser_training/llama-cookbook/src/llama_cookbook/datasets/**
